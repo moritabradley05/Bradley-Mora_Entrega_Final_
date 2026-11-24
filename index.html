@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBJ/ — Archivo de Diseño</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <!-- Nuestro CSS externo -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md border-bottom border-dark" aria-label="Navegación principal">
+    <div class="container-fluid px-4 py-2">
+      <a class="navbar-brand fw-bold" href="#inicio">OBJ<span class="logo-barra">/</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <div class="navbar-nav ms-auto align-items-md-center gap-md-4">
+          <a class="nav-link" href="#archivo">ARCHIVO</a>
+          <a class="nav-link" href="#concepto">CONCEPTO</a>
+          <a class="nav-link" href="#contacto">CONTACTO</a>
+          <button type="button" class="btn btn-dark btn-sm px-3" data-bs-toggle="modal" data-bs-target="#modalObjeto">PROPONER UN OBJETO ↗</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="container-fluid hero border-bottom border-dark px-4 pt-5 pb-4">
+    <div class="row align-items-end">
+      <div class="col-lg-8">
+        <p class="etiqueta mb-4">ARCHIVO INDEPENDIENTE DE DISEÑO — VOL. 001</p>
+        <h1>OBJETOS<br><span class="linea2">FUERA DE</span><br>LO COMÚN<span class="punto">.</span></h1>
+      </div>
+      <div class="col-lg-4 d-flex flex-column justify-content-end align-items-start pb-3">
+        <p class="lead">Un archivo independiente de objetos que transformaron nuestra forma de habitar, observar y diseñar.</p>
+        <a class="btn btn-dark px-4 py-3" href="#archivo">EXPLORAR EL ARCHIVO ↗</a>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between border-top border-dark pt-3 mt-5 etiqueta">
+      <span>FORMA / MATERIAL / FUNCIÓN</span><span>DESLIZÁ PARA EXPLORAR ↓</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="archivo" class="container-fluid px-4 py-5 border-bottom border-dark">
+      <div class="d-flex justify-content-between align-items-end border-bottom border-dark pb-3 mb-4">
+        <div><p class="etiqueta">01 / LA COLECCIÓN</p><h2>EL ARCHIVO<span class="punto">/</span></h2></div>
+        <span class="etiqueta">06 OBJETOS SELECCIONADOS</span>
+      </div>
+      <!-- Las tarjetas se crean desde JSON con fetch y for...of -->
+      <div id="grilla-objetos" class="row g-4">
+        <p class="lead">Cargando colección...</p>
+      </div>
+    </section>
+
+    <section id="concepto" class="container-fluid px-4 py-5 border-bottom border-dark">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-5">
+          <div class="panel-manifiesto border border-dark p-4 d-flex flex-column justify-content-between">
+            <p class="etiqueta">02 / NUESTRA MIRADA</p>
+            <div class="display-1 fw-bold">¿LA FORMA<br>SIGUE A<br><span class="punto">?</span></div>
+            <p class="etiqueta">PREGUNTAR ES DISEÑAR.</p>
+          </div>
+        </div>
+        <div class="col-md-7 d-flex flex-column justify-content-center">
+          <p class="etiqueta">UN ARCHIVO VIVO DE DISEÑO</p>
+          <h2 class="mb-4">No son solo objetos. Son ideas hechas materia.</h2>
+          <p class="lead">OBJ/ reúne piezas que alteraron convenciones, exploraron materiales y propusieron nuevas maneras de relacionarnos con lo cotidiano.</p>
+          <p>Este archivo presenta una selección editorial de seis diseños de referencia. Cada objeto se vincula a su fabricante o institución para seguir investigando su historia.</p>
+          <a class="btn btn-outline-dark align-self-start" href="#archivo">VOLVER A LA COLECCIÓN ↑</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="container-fluid px-4 py-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between gap-3">
+      <div><h2 class="logo-footer">OBJ/</h2><p>Archivo independiente de diseño — Proyecto académico.</p></div>
+      <div class="d-flex flex-column align-items-md-end gap-2">
+        <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#modalObjeto">PROPONER UN OBJETO ↗</button>
+        <a href="#inicio">VOLVER ARRIBA ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Bootstrap con formulario funcional de demostración -->
+  <div class="modal fade" id="modalObjeto" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-dark">
+          <h2 class="modal-title fs-4" id="modalTitulo">PROPONER UN OBJETO /</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Proponé un objeto para una futura edición del archivo.</p>
+          <form id="formObjeto">
+            <div class="mb-3"><label for="nombre" class="form-label">Tu nombre</label><input class="form-control" type="text" id="nombre" required></div>
+            <div class="mb-3"><label for="correo" class="form-label">Tu correo electrónico</label><input class="form-control" type="email" id="correo" required></div>
+            <div class="mb-3"><label for="pieza" class="form-label">Objeto propuesto</label><input class="form-control" type="text" id="pieza" required></div>
+            <button type="submit" class="btn btn-dark w-100">ENVIAR PROPUESTA ↗</button>
+          </form>
+          <p id="mensajeFormulario" class="mt-3 mb-0" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/codigo.js"></script>
+</body>
+</html>

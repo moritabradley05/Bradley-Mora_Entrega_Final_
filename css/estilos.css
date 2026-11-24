@@ -1,0 +1,50 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+/* Colores del archivo */
+:root {
+  --papel: #e8e5dd;
+  --tinta: #171717;
+  --lima: #d6ff35;
+}
+
+html { font-size: 16px; }
+body { background-color: var(--papel); color: var(--tinta); font-family: 'DM Sans', sans-serif; }
+h1, h2, h3, .navbar-brand, .display-1 { font-family: 'Space Grotesk', sans-serif; }
+h1 { font-size: clamp(2.7rem, 8.5vw, 7rem); font-weight: 700; line-height: 0.96; }
+h2 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; }
+h3 { font-size: 2rem; font-weight: 700; }
+a { color: var(--tinta); }
+.etiqueta { font-size: 0.87rem; font-weight: 700; }
+.logo-barra, .punto { color: #98b800; }
+.linea2 { color: #696a63; }
+.navbar-brand { font-size: 1.8rem; }
+.nav-link { font-size: 0.94rem; font-weight: 700; }
+
+/* Portada editorial */
+.hero { height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
+.hero .row { margin-top: auto; margin-bottom: auto; width: 100%; }
+.hero .lead { font-size: clamp(1rem, 2vw, 1.35rem); }
+
+/* Personalizar clases de Bootstrap */
+.btn-dark { background-color: var(--tinta); border-color: var(--tinta); border-radius: 0; font-weight: 700; }
+.btn-outline-dark { border-radius: 0; }
+.btn-dark:hover { background-color: #444; border-color: #444; }
+.card { background-color: transparent; border-radius: 0; }
+
+/* Fichas e imágenes */
+.foto-objeto { width: 100%; background-color: #f5f4f0; padding: 12px; border: 1px solid var(--tinta); transition: box-shadow 0.3s ease, border-color 0.3s ease; }
+.foto-objeto:hover { border-color: #98b800; box-shadow: 0 5px 14px rgba(0,0,0,0.25); }
+.ficha { border-top: 1px solid var(--tinta); padding-top: 16px; font-size: 1.08rem; }
+.ficha p { line-height: 1.5; }
+.ficha a { text-decoration: none; font-weight: 700; }
+.ficha a:hover { text-decoration: underline; }
+
+/* Concepto */
+.panel-manifiesto { height: 420px; background-color: var(--lima); }
+.panel-manifiesto .display-1 { font-size: clamp(2rem, 4vw, 3.4rem); line-height: 0.99; }
+
+/* Pie y modal */
+.logo-footer { font-size: 3rem; }
+.modal-content { border-radius: 0; background-color: var(--papel); }
+.form-control { border-radius: 0; }

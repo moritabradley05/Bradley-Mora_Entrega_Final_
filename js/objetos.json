@@ -1,0 +1,74 @@
+[
+  {
+    "numero": "01",
+    "nombre": "Panton Chair",
+    "disenador": "Verner Panton",
+    "anio": "1959",
+    "categoria": "Asientos",
+    "material": "Polipropileno",
+    "descripcion": "Una silueta continua que convirtió el plástico en una nueva forma de sentarse.",
+    "fuente": "https://www.vitra.com/es-un/product/panton-chair",
+    "imagen": "img/objeto-01.jpg",
+    "credito": "https://commons.wikimedia.org/wiki/File:Panton_Chair_by_Verner_Panton.JPG"
+  },
+  {
+    "numero": "02",
+    "nombre": "Arco",
+    "disenador": "Achille y Pier Giacomo Castiglioni",
+    "anio": "1962",
+    "categoria": "Iluminación",
+    "material": "Mármol y acero inoxidable",
+    "descripcion": "Una lámpara de pie que lleva la luz sobre una mesa sin depender del techo.",
+    "fuente": "https://flos.com/es/es/historias/arco-a-design-icon.html",
+    "imagen": "img/objeto-02.jpg",
+    "credito": "https://commons.wikimedia.org/wiki/File:L%C3%A1mpara_Arco._Dise%C3%B1o_de_Achille_y_Pier_Giacomo_Castiglioni._%281962%29.jpg"
+  },
+  {
+    "numero": "03",
+    "nombre": "Componibili",
+    "disenador": "Anna Castelli Ferrieri",
+    "anio": "1967",
+    "categoria": "Almacenamiento",
+    "material": "Plástico ABS",
+    "descripcion": "Un sistema modular de almacenamiento pensado para desplazarse entre distintos espacios.",
+    "fuente": "https://www.kartell.com/es/es/ktes/shop/product/componibili-classic/kar0496703",
+    "imagen": "img/objeto-03.jpg",
+    "credito": "https://commons.wikimedia.org/wiki/File:Kartell_Componibili_(wei%C3%9F).jpg"
+  },
+  {
+    "numero": "04",
+    "nombre": "Tizio",
+    "disenador": "Richard Sapper",
+    "anio": "1972",
+    "categoria": "Iluminación",
+    "material": "Metal y componentes eléctricos",
+    "descripcion": "Una lámpara articulada que combina equilibrio, precisión y libertad de movimiento.",
+    "fuente": "https://www.artemide.com/es/subfamily/18869/tizio",
+    "imagen": "img/objeto-04.jpg",
+    "credito": "https://commons.wikimedia.org/wiki/File:Lampe_Tizio_von_Richard_Sapper.jpg"
+  },
+  {
+    "numero": "05",
+    "nombre": "Juicy Salif",
+    "disenador": "Philippe Starck",
+    "anio": "1990",
+    "categoria": "Objetos",
+    "material": "Aluminio fundido",
+    "descripcion": "Un exprimidor convertido en una pieza escultórica que cuestiona los límites de la función.",
+    "fuente": "https://alessi.com/es/products/juicy-salif-citrus-squeezer",
+    "imagen": "img/objeto-05.jpg",
+    "credito": "https://commons.wikimedia.org/wiki/File:Philippe_starck_per_alessi_spa.%2C_spremiagrumi_juicy_salif%2C_1990.jpg"
+  },
+  {
+    "numero": "06",
+    "nombre": "Lounge Chair",
+    "disenador": "Charles y Ray Eames",
+    "anio": "1956",
+    "categoria": "Asientos",
+    "material": "Madera laminada y cuero",
+    "descripcion": "Un clásico que combina técnicas industriales, ergonomía y confort doméstico.",
+    "fuente": "https://www.vitra.com/es-un/product/details/lounge-chair",
+    "imagen": "img/objeto-06.jpg",
+    "credito": "https://commons.wikimedia.org/wiki/File:Eames_Lounge_Chair_-_side.jpg"
+  }
+]
